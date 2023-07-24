@@ -39,7 +39,7 @@ h3,h4,h5,h6{font-family: 'Urbanist';}
 
 .list-container{
     min-width:300px; 
-    max-height: 300px;
+    max-height: 500px;
     padding: 25px;
     overflow-y: scroll;
     background-color: #f0fff0;
@@ -48,6 +48,11 @@ h3,h4,h5,h6{font-family: 'Urbanist';}
 
 
 @media screen and (max-width:768px){
+
+    .list-container{
+        min-width: none;
+        padding: 15px;
+    }
 
 }
 
