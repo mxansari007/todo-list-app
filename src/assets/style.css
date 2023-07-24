@@ -39,7 +39,7 @@ h3,h4,h5,h6{font-family: 'Urbanist';}
 
 .list-container{
     min-width:300px; 
-    max-height: 500px;
+    max-height: 425px;
     padding: 25px;
     overflow-y: scroll;
     background-color: #f0fff0;
