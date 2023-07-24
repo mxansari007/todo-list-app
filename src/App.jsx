@@ -61,13 +61,13 @@ function App() {
     <>
     <div  className="container">
     <div>
+    <div>
       <h1 className='Logo'>To-do List App</h1>
       </div>
       <div style={{display:'flex', flexDirection:'row',padding:'25px'}}>
       <Input style={{color:'#36454f'}} id="input-box" onChange={(e)=>{setListData(e.target.value)}} color="secondary" bordered/>
       <Button onClick={handleSubmit} style={{marginLeft:'10px'}} onMouseEnter={()=>{mouseEnter("plus-icon")}} onMouseLeave={()=>{mouseLeave("plus-icon")}} color="gradient" auto>Add<i style={{fontSize:'1rem',marginLeft:'5px'}} id="plus-icon" className='fa-solid fa-plus'></i></Button>
       </div>
-      
       {list.length!=0?<Paper>
       <div className='list-container'>
       <div className='list-items'>
@@ -75,6 +75,8 @@ function App() {
       </div>
       </div>
       </Paper>:null}
+      </div>
+
       <div className='footer'>
       <p style={{marginLeft:'25px'}}>All rights reserved 2023</p>
       <p style={{marginRight:'25px'}}>made with ❤️ by Maaz Ansari</p>
