@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-let count =0;
+
 export const listSlice = createSlice({
     name:'list',
     initialState:{
@@ -8,9 +8,10 @@ export const listSlice = createSlice({
 
     reducers:{
         addToList:(state,action) =>{
-            state.values = [{id:count++,...action.payload},...state.values];
+            state.values = [{id:state.values.length,...action.payload},...state.values];
             const stringify = JSON.stringify(state.values);
             localStorage.setItem('list',stringify);
+            console.log(state.values);
         },
         markIt:(state,action)=>{
             for(let i =0; i<state.values.length; i++){
@@ -28,6 +29,7 @@ export const listSlice = createSlice({
         },
         setToList:(state,action)=>{
             state.values = action.payload;
+
         }
 
     }

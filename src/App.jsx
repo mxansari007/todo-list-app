@@ -18,8 +18,8 @@ function App() {
   useEffect(()=>{
     const localList = JSON.parse(localStorage.getItem('list'));
     console.log(localList);
-    if(localList.length != 0){
-      dispatch(setToList([...localList]));
+    if(localList){
+      dispatch(setToList(localList));
     }
   },[])
   
@@ -77,6 +77,10 @@ function App() {
       </Paper>:null}
 
     </div>
+    <div className='footer'>
+      <p style={{marginLeft:'25px'}}>All rights reserved 2023</p>
+      <p style={{marginRight:'25px'}}>made with ❤️ by Maaz Ansari</p>
+      </div>
     </>
   )
 }
