@@ -75,12 +75,12 @@ function App() {
       </div>
       </div>
       </Paper>:null}
-
-    </div>
-    <div className='footer'>
+      <div className='footer'>
       <p style={{marginLeft:'25px'}}>All rights reserved 2023</p>
       <p style={{marginRight:'25px'}}>made with ❤️ by Maaz Ansari</p>
       </div>
+    </div>
+
     </>
   )
 }
